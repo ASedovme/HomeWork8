@@ -1,3 +1,6 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Домашнее задание 8");
@@ -26,9 +29,33 @@ public class Main {
 
 //Задание 2
         System.out.println("Задание 2");
-        System.out.println(number[0] + "," + number[1] + "," + number[2]);
-        System.out.println(num[0] + "," + num[1] + "," + num[2]);
-        System.out.println(mas[0] + "," + mas[1] + "," + mas[2] + "," + mas[3]);
+        // System.out.println(number[0] + "," + number[1] + "," + number[2]);
+        for (int i = 0; i <= 2; i++) {
+            if (i < 2) {
+                System.out.print(number[i] + ", ");
+            } else {
+                System.out.print(number[i]);
+            }
+        }
+        System.out.println(" ");
+        //System.out.println(num[0] + "," + num[1] + "," + num[2]);
+        for (int i = 0; i <= 2; i++) {
+            if (i < 2) {
+                System.out.print(num[i] + ", ");
+            } else {
+                System.out.print(num[i]);
+            }
+        }
+        System.out.println(" ");
+        //System.out.println(mas[0] + "," + mas[1] + "," + mas[2] + "," + mas[3]);
+        for (int i = 0; i <= 3; i++) {
+            if (i < 3) {
+                System.out.print(mas[i] + ", ");
+            } else {
+                System.out.print(mas[i]);
+            }
+        }
+        System.out.println(" ");
 //Задание 3
         System.out.println("Задание 3");
         for (int i = 2; i >= 0; i--) {
@@ -60,8 +87,8 @@ public class Main {
         for (int i = 0; i <= 2; i++) {
             if (number[i] % 2 != 0) {
                 number[i] = number[i] + 1;
-                System.out.println(number[i]);
-            } else System.out.println(number[i]);
+            }
         }
+        System.out.println(Arrays.toString(number));
     }
 }
